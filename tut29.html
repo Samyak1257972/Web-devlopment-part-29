@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 900px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            display: flex;
+            /* flex properties for container */
+            /* flex-direction: row; (Default) */
+            /* flex-direction: row; */
+            /* flex-direction: column; will start from top to bottom */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; will start from right to left */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: row-reverse; will start from bottom to top */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: nowrap; (Default) */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; it will wrap the item in next line to make responsive design */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; it will wrap reverse */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: flex-direction flex-wrap; */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center; makes item horizontally center */
+            /* justify-content: center; */
+            /* justify-content: space-evenly; will give space same bettween start, end and two boxes also */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-bettween; will give no space bettween start, end and give more bettween two boxes */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; will give space low bettween start, end and give more bettween two boxes */
+            /* justify-content: space-around; */
+            /* align-items: center; makes all item vertically center */
+            /* align-items: center; */
+            /* align-items: flex-end; this will position our all items to bottom */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; (Default) */
+            /* align-items: flex-start; */
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 4px;
+            padding: 20px;
+            background-color: coral;
+        }
+        
+        #box_1 {
+            /* flex properties for flex items */
+            /* order: 2; whose order is biggest that will come first */
+            /* order: 2; */
+            /* flex-grow: 2; whose flex grow is biggest that will grow faster */
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; whose flex shrink is biggest that will shrink faster */
+            /* flex-shrink: 2; */
+            /* flex: <flex-grow> <flex-shrink>; */
+            /* flex: 5 2; */
+            /* flex-basis: 200px; if you flex direction is row than flex-basis will control item's width */
+            /* flex-basis: 200px; if you flex direction is column than flex-basis will control item's height */
+            /* flex-basis: 200px; */
+            /* align-self: center; makes one item vertically center */
+            /* align-self: center; */
+            /* align-self: flex-end; this will position our one items to bottom */
+            /* align-self: flex-end; */
+            /* align-self: flex-start; (Default) */
+            /* align-self: flex-start; */
+        }
+        /* #box_2 {
+            flex: 2 5;
+            flex-shrink: 5;
+            flex-grow: 5;
+            order: 3;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box_1">box 1</div>
+        <div class="box" id="box_2">box 2</div>
+        <div class="box" id="box_3">box 3</div>
+        <!-- <div class="box" id="box_4">box 4</div> -->
+        <!-- <div class="box" id="box_5">box 5</div> -->
+    </div>
+</body>
+
+</html>
